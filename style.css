@@ -1,0 +1,374 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* HOME STYLING AND ANIMATIONS START*/
+@keyframes bubblePop {
+  0% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.8;
+    transform: scale(0.8);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(0.4);
+  }
+}
+
+@keyframes drop {
+  0% {
+    opacity: 1;
+    font-size: 5rem;
+    transform: scale(1.5) translate(0, 0);
+  }
+  50% {
+    opacity: 0.6;
+    transform: translate(calc(-20vw + 8%), calc(80vh - 20%));
+  }
+  99% {
+    opacity: 0.2;
+    transform: translate(calc(-20vw + 8%), calc(80vh - 50%));
+  }
+  99.5% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes typewriter {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 80%;
+  }
+}
+.anim {
+  z-index: 100;
+  animation: drop 1.5s forwards;
+}
+
+.Site {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.Home,
+.About,
+.Project {
+  background-image: url("images/pexels-skylar-kang-6044198.jpg");
+  background-size: contain;
+  height: 100vh;
+  width: 100%;
+  padding-top: 8vh;
+}
+@media (max-width: 768px) {
+  .Home,
+  .About,
+  .Project {
+    height: auto; /* Allow the height to adjust based on content */
+    min-height: 100vh; /* Ensure at least full screen height */
+    background-size: cover; /* Maintain the cover property for phones */
+  }
+}
+.Home {
+  color: white;
+  display: flex;
+  justify-content: space-evenly;
+}
+.Home img {
+  margin-top: 15%;
+  width: 70%;
+  max-width: 500px;
+  height: auto;
+  border-radius: 50%;
+  opacity: 0.8;
+  object-fit: cover;
+  display: block;
+  margin-left: auto;
+  margin-right: 30%;
+}
+
+.Intro {
+  margin-top: 15%;
+  margin-left: 5%;
+}
+.Intro h1 {
+  font-size: 4rem;
+  opacity: 0.8;
+}
+.Intro h3,
+pre {
+  font-size: 2rem;
+  opacity: 0.8;
+}
+
+.NavBar {
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.25);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 8vh;
+  justify-content: end;
+}
+.NavBar h1 {
+  margin-right: auto;
+  color: antiquewhite;
+  align-self: center;
+  font-size: 3rem;
+  padding: 30px;
+  overflow: hidden;
+  animation: typewriter 3s steps(10) forwards;
+}
+.Dropdown {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  top: 20%;
+  margin-right: 10px;
+  gap: 10px;
+}
+.Dropdown button {
+  font-size: 1rem;
+  color: black;
+  height: 50px;
+  width: 100px;
+  background-color: white;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1),
+    0 0 20px rgba(255, 255, 255, 0.05);
+  transition: opacity 300ms ease, transform 300ms ease;
+}
+
+.Dropdown button:hover {
+  transform: scale(1.05);
+}
+.Hamburger {
+  color: antiquewhite;
+  position: absolute;
+  top: 50%;
+  right: 17px;
+  opacity: 0;
+  translate: -50% -50%;
+  font-size: 3rem;
+}
+.hidden {
+  animation: bubblePop 300ms forwards;
+}
+.Hamburger.active {
+  z-index: 1;
+  opacity: 1;
+}
+.hide {
+  opacity: 0;
+}
+/* END OF HOME STYLING */
+/*ABOUT PAGE STYLING*/
+@keyframes apper {
+  from {
+    opacity: 0.1;
+    transform: scale(0.6) translateZ(-100%);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) translateZ(0);
+  }
+}
+.About {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.Title {
+  opacity: 0;
+  margin-left: 8%;
+}
+.Title p {
+  font-size: 3rem;
+  color: white;
+}
+.Apper {
+  animation: apper 1s forwards 2s;
+}
+.Text {
+  margin-right: 16%;
+  margin-left: 8%;
+  display: flex;
+  opacity: 0;
+  height: 21%;
+}
+.Text p {
+  color: white;
+  line-height: 1.5;
+  font-size: 1.3em;
+  text-align: justify;
+  white-space: wrap;
+  overflow: hidden;
+}
+.Type {
+  opacity: 1;
+  animation: typewriter 3s steps(30) forwards;
+}
+.Container {
+  width: 80%;
+  display: flex;
+  margin-left: 8%;
+  margin-right: 16%;
+  gap: 20px;
+}
+.SAE,
+.Contact {
+  width: 50%;
+}
+.Skills,
+.Achievements,
+.Education {
+  margin-bottom: 10px;
+}
+.dropdown-header {
+  background-color: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  box-shadow: 0 1px 12px rgba(0, 0, 0, 0.25);
+  font-size: 1.5em;
+  color: white;
+  border-radius: 7px 7px 0px 0px;
+  padding: 10px;
+  border-bottom: 0;
+}
+.dropdown-header:hover {
+  transform: translateY(4px);
+}
+.dropdown-content {
+  display: none;
+  margin-bottom: 2.5%;
+  font-size: 1em;
+  color: white;
+  text-align: justify;
+  background-color: rgba(255, 255, 255, 0.1); /* Lighter glass effect */
+  backdrop-filter: blur(3px); /* Slight blur for distinction */
+  border: 1px solid rgba(255, 255, 255, 0.2); /* Subtle border */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2); /* Light shadow */
+  border-radius: 0px 0px 7px 7px;
+  padding: 8px;
+  border-top: 0;
+}
+#dropdown1 .dropdown-content {
+  display: block;
+}
+b {
+  color: lemonchiffon;
+}
+.Contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: lemonchiffon;
+  background-color: rgba(255, 255, 255, 0.1); /* Lighter glass effect */
+  backdrop-filter: blur(3px); /* Slight blur for distinction */
+  border: 1px solid rgba(255, 255, 255, 0.2); /* Subtle border */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2); /* Light shadow */
+  border-radius: 7px;
+}
+
+.Project1,
+.Project2,
+.Project3 {
+  perspective: 1000px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 10%;
+  width: 25%;
+  transform-style: preserve-3d;
+  transition: transform 0.6s ease;
+}
+.pheading {
+  background-color: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  box-shadow: 0 1px 12px rgba(0, 0, 0, 0.25);
+  text-align: center;
+  color: lemonchiffon;
+  font-size: 1.5rem;
+  padding: 30px;
+  border-radius: 7px 7px 0px 0px;
+  height: 17%;
+  width: 100%;
+}
+
+.pimage {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  background-color: rgba(255, 255, 255, 0.1); /* Lighter glass effect */
+  backdrop-filter: blur(3px); /* Slight blur for distinction */
+  border: 1px solid rgba(255, 255, 255, 0.2); /* Subtle border */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2); /* Light shadow */
+  border-radius: 0px 0px 7px 7px;
+  perspective: 1000px;
+}
+.pimage img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0px 0px 7px 7px;
+}
+.Project1:hover,
+.Project2:hover,
+.Project3:hover {
+  transform:  rotateX(40deg) scaleY(1.2);
+  
+}
+
+.Project1:hover .pinfo ,
+.Project2:hover .pinfo ,
+.Project3:hover .pinfo{
+  opacity: 1;
+}
+.pinfo{
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  left: 50%; 
+  transform: translate(-50%);
+  opacity: 0;
+}
+.pinfo p{
+  color: white;
+  background-color: rgba(0, 0, 0, 0.55);
+  backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  box-shadow: 0 1px 12px rgba(0, 0, 0, 0.25);
+  text-align: center;
+  border-radius: 7px;
+  padding: 10px;
+  transition: 1s ease;
+}
+.pinfo img{
+  height: 50px;
+  width: auto;
+  background-color: white;
+  border-radius: 50%;
+}
+.Wrap{
+  display: flex;
+  justify-content: space-evenly;
+  gap: 20px;
+
+}
+
+.Pheader{
+  text-align: center;
+  font-size: 4em;
+  color: white;
+}
