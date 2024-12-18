@@ -84,7 +84,7 @@
 }
 .Home img {
   margin-top: 20vh;
-  width: 70%;
+  width: 100%;
   max-width: 500px;
   height: auto;
   border-radius: 50%;
@@ -93,8 +93,9 @@
   display: block;
   margin-left: auto;
   margin-right: 30%;
+  mask-image: radial-gradient(circle, rgba(0, 0, 0, 1) 80%, rgba(0, 0, 0, 0) 100%);
+  -webkit-mask-image: radial-gradient(circle, rgba(0, 0, 0, 1) 80%, rgba(0, 0, 0, 0) 100%);
 }
-
 .Intro {
   margin-top: 15%;
   margin-left: 5%;
