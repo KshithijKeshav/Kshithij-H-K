@@ -61,8 +61,9 @@
 .Home,
 .About,
 .Project {
-  background-image: url("images/pexels-skylar-kang-6044198.jpg");
-  background-size: contain;
+  /*background-image: url("images/pexels-skylar-kang-6044198.jpg");
+  background-size: contain;*/
+  backgrpund-color:black;
   height: 100vh;
   width: 100%;
   padding-top: 8vh;
@@ -82,7 +83,7 @@
   justify-content: space-evenly;
 }
 .Home img {
-  margin-top: 15%;
+  margin-top: 20vh;
   width: 70%;
   max-width: 500px;
   height: auto;
