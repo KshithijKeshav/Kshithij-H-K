@@ -54,3 +54,17 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 });
+document.addEventListener('DOMContentLoaded', function () {
+    if (window.performance && window.performance.navigation.type === window.performance.navigation.TYPE_RELOAD) {
+        window.location.hash = '#home';
+
+        setTimeout(() => {
+            const homeSection = document.getElementById('home');
+            if (homeSection) {
+                homeSection.scrollIntoView({ behavior: 'smooth' });
+            }
+        }, 100); 
+    } else if (!window.location.hash) {
+        window.location.hash = '#home';
+    }
+});
