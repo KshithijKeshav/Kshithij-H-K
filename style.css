@@ -27,11 +27,11 @@
   }
   50% {
     opacity: 0.6;
-    transform: translate(calc(-20vw + 8%), calc(80vh - 20%));
+    transform: translate(calc(-20vw + 8%), calc(79vh - 20%));
   }
   99% {
     opacity: 0.2;
-    transform: translate(calc(-20vw + 8%), calc(80vh - 50%));
+    transform: translate(calc(-20vw + 8%), calc(79vh - 50%));
   }
   99.5% {
     opacity: 0;
