@@ -25,13 +25,9 @@
     font-size: 5rem;
     transform: scale(1.5) translate(0, 0);
   }
-  50% {
-    opacity: 0.6;
-    transform: translate(calc(-21vw + 8%), calc(79vh - 20%));
-  }
   99% {
-    opacity: 0.2;
-    transform: translate(calc(-21vw + 8%), calc(79vh - 50%));
+    opacity: 0.4;
+    transform: translate(calc(-17vw + 8%), calc(78vh - 50%));
   }
   99.5% {
     opacity: 0;
