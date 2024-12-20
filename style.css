@@ -272,14 +272,14 @@ b {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2); /* Light shadow */
   border-radius: 7px;
 }
-.Contact button{
+.Contact a{
   margin-top:20%;
   width:80%;
   border-radius:10px;
-  color:lemonchiffon;
+  background-color:lemonchiffon;
 }
-.Contact button:hover{
-  transform: scale(1.1) TranslateY(5px);
+.Contact a:hover{
+  transform: scale(1.1) TranslateY(2px);
 }
 .Project1,
 .Project2,
