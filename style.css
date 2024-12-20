@@ -281,6 +281,10 @@ b {
 .Contact a:hover{
   transform: scale(1.1) TranslateY(2px);
 }
+.Contact button{
+  width:100%;
+  background-color:rgba(0,0,0,0);
+}
 .Project1,
 .Project2,
 .Project3 {
