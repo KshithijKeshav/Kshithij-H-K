@@ -283,6 +283,7 @@ b {
   transform: scale(1.1) TranslateY(2px);
 }
 .Contact button{
+  font-size:2em;
   height:100%;
   width:100%;
   background-color:rgba(0,0,0,0);
