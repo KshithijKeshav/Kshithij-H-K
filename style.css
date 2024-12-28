@@ -205,9 +205,9 @@ pre {
 .Text p {
   color: white;
   line-height: 1.5;
-  font-size: 1.3em;
+  font-size: 1em;
   text-align: justify;
-  white-space: wrap;
+
   overflow: hidden;
   font-family: 'Courier New', monospace;
 }
@@ -277,6 +277,7 @@ b {
   border: 1px solid rgba(255, 255, 255, 0.2); /* Subtle border */
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2); /* Light shadow */
   border-radius: 7px;
+  font-family: 'Courier New', monospace;
 }
 .Contact a{
   height:30%;
