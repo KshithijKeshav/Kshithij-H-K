@@ -190,6 +190,7 @@ pre {
 .Title p {
   font-size: 3rem;
   color: white;
+  font-family: 'Courier New', monospace;
 }
 .Apper {
   animation: apper 1s forwards 2s;
@@ -208,6 +209,7 @@ pre {
   text-align: justify;
   white-space: wrap;
   overflow: hidden;
+  font-family: 'Courier New', monospace;
 }
 .Type {
   opacity: 1;
@@ -239,6 +241,7 @@ pre {
   border-radius: 7px 7px 0px 0px;
   padding: 10px;
   border-bottom: 0;
+  font-family: 'Courier New', monospace;
 }
 .dropdown-header:hover {
   transform: translateY(4px);
@@ -256,6 +259,7 @@ pre {
   border-radius: 0px 0px 7px 7px;
   padding: 8px;
   border-top: 0;
+  font-family: 'Courier New', monospace;
 }
 #dropdown1 .dropdown-content {
   display: block;
@@ -290,6 +294,7 @@ b {
   width:100%;
   background-color:rgba(0,0,0,0);
   border:none;
+  font-family: 'Courier New', monospace;
 }
 .Project1,
 .Project2,
@@ -314,6 +319,7 @@ b {
   border-radius: 7px 7px 0px 0px;
   height: 17%;
   width: 100%;
+  font-family: 'Courier New', monospace;
 }
 
 .pimage {
@@ -366,6 +372,7 @@ b {
   border-radius: 7px;
   padding: 10px;
   transition: 1s ease;
+  font-family: 'Courier New', monospace;
 }
 .pinfo img{
   height: 50px;
@@ -384,4 +391,5 @@ b {
   text-align: center;
   font-size: 4em;
   color: white;
+  font-family: 'Courier New', monospace;
 }
