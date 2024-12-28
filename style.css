@@ -96,11 +96,13 @@
 .Intro h1 {
   font-size: 4rem;
   opacity: 0.8;
+  font-family: 'Courier New', monospace;
 }
 .Intro h3,
 pre {
   font-size: 2rem;
   opacity: 0.8;
+  font-family: 'Courier New', monospace;
 }
 
 .NavBar {
