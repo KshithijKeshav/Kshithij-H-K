@@ -205,10 +205,10 @@ pre {
 .Text p {
   color: white;
   line-height: 1.5;
-  font-size: 1em;
+  font-size: 1.2em;
   text-align: justify;
-
   overflow: hidden;
+  white-space:wrap;
   font-family: 'Courier New', monospace;
 }
 .Type {
